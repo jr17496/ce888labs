@@ -56,6 +56,9 @@ if __name__ == "__main__":
     standard_diviation_current = np.std(current_fleet)
     standard_diviation_new = np.std(new_fleet)
 
+    print('Standard diviation for the current fleet: ' + str(standard_diviation_current))
+    print('Standard diviation for the new fleet: ' + str(standard_diviation_new))
+
     data_current = current_fleet
     boots = []
     for i in range(100, 100000, 1000):
