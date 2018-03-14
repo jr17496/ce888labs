@@ -6,4 +6,6 @@ emo = EmotionDetector()
 @module.rule('')
 def hi(bot, trigger):
     print(trigger, trigger.nick)
-    #bot.say('Hi, ' + trigger.nick)
+    emotions = emo.detect_emotion_in_raw(trigger)
+    emotions = emotions.tolist()
+    bot.say(str(emotions))
