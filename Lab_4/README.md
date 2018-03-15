@@ -1,42 +1,34 @@
 # Lab4
 
-## Setting up 
-* Do the following from the unix prompt of your VM
-	* Go to the directory you "cloned" the module files last time
-	* Do `git pull origin master' to bring the new files
+## For alpha = 0.0001 and iterations = 30
 
-* Do the following tasks using your windows share or your unix account in the VM	
-	* Copy the lab files from the module directory into your own github lab directory, in "lab4_new" folder
-	* Remove everything from the copied README.md
+### MSE on training set every 5 iterations:
 
-## ipython/jupiter
+5.121679294476862
+4.933984635661784
+4.822739857817528
+4.718380005290005
+4.62951871669316
+4.543136073677688
 
-* Start ipython/jupiter by typing `ipython notebook --ip='*'`
-* Start a browser and connect to `http://mlvm2:8888/`
-	* You will need to input the token that was provided to you when you started ipython (looks like "c3fad33a4d227d5f395f6b2ce5de34c05b2dfa0ca516b36f" (NOT THIS ONE))
-* Using the web page, go to lab4_new
 
-## Ipython notebooks
+### MSE on the test set = 0.002129083181501723
 
-* Inside `lab4_new` you will see Rec_correct.ipynb and Rec_features.ipynb
 
-* Create a new Ipython notebook
 
-## Lab Exercises 
 
-- [ ] Load the data from the file ``jester-data-1.csv''
-	* The data is from [http://eigentaste.berkeley.edu/dataset/](http://eigentaste.berkeley.edu/dataset/) and it contains the ratings of 101 jokes from 24,983 users
-	* You can find the jokes in the website [http://eigentaste.berkeley.edu/dataset/jester_dataset_1_joke_texts.zip](http://eigentaste.berkeley.edu/dataset/jester_dataset_1_joke_texts.zip)
-- [ ] Label approx 10% of the dataset cells as 99, to denote they are part of the validation set. Keep the the actual values of the cells so you can use them later. 
-- [ ] Use latent factor modeling to infer the hidden ratings of the users (they are labeled as "99" in the dataset) on the training set
-- [ ] Calculate the performance of the algorithm on the validation dataset
-- [ ] Change hyper-parameters (i.e. learning rates, number of iterations, number of latent factors etc) as needed so you can get good results
-- [ ] Report the MSE on the test dataset
+## For alpha = 0.0005 and iterations = 30
 
-- [ ] (if you have time) Use pandas to find the best and the worst rated jokes
+### MSE on training set every 5 iterations:
 
-- [ ] Once you are done, save your changes in github
-	* Go inside your lab directory and do 
-      * ``git add -A -v``
-      * ``git commit -m <message>``
-      * ``git push origin master``
+5.016286063323216
+4.448972944060637
+4.168842635051127
+4.164545250558481
+4.169337526053188
+4.176161940926425
+
+
+
+### MSE on the test set = 0.009828351779394116
+
